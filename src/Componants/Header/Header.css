@@ -1,0 +1,427 @@
+.nav1 {
+  background-color: #C8B8DF;
+  width: 98vw;
+  display: flex;
+  height: 75px;
+  justify-content: space-between;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+.textnav{
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backimg{
+  background-color: #c0dcf1;
+  background-image: url('https://www.sephora.com/contentimages/2024-04-05-sse-bunlde-b-site-desktop-global-top-banner-rouge-unrecognized-1226x120-us-can_final.jpg?imwidth=612');
+  background-size: cover;
+  width: 50vw;
+  margin-right: -5px;
+}
+.navDis{
+  text-align: center;
+  margin-left: 15px;
+}
+
+.navDis:hover {
+  text-decoration: underline;
+  text-align: center;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.nav2 {
+  background-color: #faf9f7;
+  padding: 1.5rem;
+}
+.nav2 > div {
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#debouncingcard2{
+  display: none;
+  z-index: 3;
+  width: 80%;
+  transform: 0.5s;
+  margin-left: 8vw;
+  background-color: #F6F6F8;
+  border:  1px solid black;
+  border-radius: 20px;
+  margin-top: -10px;
+  position: absolute;
+}
+#debouncingcard{
+    z-index: 2;
+    width: 48%;
+    transform: 0.5s;
+    background-color: #F6F6F8;
+    border:  1px solid black;
+    border-radius: 20px;
+    margin-top: 190px;
+    position: absolute;
+}
+.searchbox{
+    z-index: 2;
+}
+.bouncecard:hover{
+    color: rgb(109, 109, 109);
+}
+.bouncecard{
+    padding-left: 25px;
+    list-style: none;
+    
+    border-radius: 20px;
+    border-bottom: 1px solid black;
+}
+.nav2 > div > div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+.nav2 > div > div > div {
+  cursor: pointer;
+}
+.nav2 > div > div p {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.navSearch {
+  width: 950px;
+  border: 1px solid black;
+  padding-left: 10px;
+  background-color: #F6F6F8;
+  border-bottom: 1px solid rgb(48, 46, 46);
+  display: flex;
+  border-radius: 30px;
+  z-index: 2;
+  align-items: center;
+}
+.navSearch2 {
+  display: none;
+  width: 950px;
+  margin-left: 8vw;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  padding-left: 10px;
+  background-color: #F6F6F8;
+  border-bottom: 1px solid rgb(48, 46, 46);
+  display: flex;
+  border-radius: 30px;
+  z-index: 2;
+  align-items: center;
+}
+.navSearch > input {
+  width: 90%;
+  padding: 5px 15px;
+  outline: none;
+  background-color: #F6F6F8;
+}
+.navSearch2 > input {
+  width: 90%;
+  padding: 5px 15px;
+  outline: none;
+  background-color: #F6F6F8;
+}
+.navLogo > a > img {
+  width: 220px;
+}
+.navLogo2 {
+  display: none;
+}
+.nav3 {
+  width: 100%;
+  background-color: black;
+  position: sticky;
+  height: 55px;
+  line-height: 45px;
+  z-index: 1;
+}
+
+.navWrapper {
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.navLink {
+  width: 100vw;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navLink li {
+  list-style: none;
+}
+.navLink > li > a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.navLink > li > a:hover {
+  background-color: rgb(27, 28, 28);
+}
+.navLink > li:hover .megaBox {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.4s;
+}
+.megaBox {
+  position: absolute;
+  top: 45px;
+  background-color: #d9eefd;
+  width: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.contentBox {
+  padding: 20px 20px;
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+.rowBox {
+  line-height: 45px;
+  width: 25%;
+}
+.rowBox img {
+  width: 100%;
+  object-fit: cover;
+}
+.navHeader {
+  font-weight: 700;
+}
+.linkBox li a {
+  display: block;
+}
+.linkBox li a:hover {
+  text-decoration: underline;
+}
+.btn {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.btn,
+.navCancel {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  display: none;
+}
+.mobileItem {
+  display: none;
+}
+.navLogin {
+  z-index: 2;
+}
+.xxx {
+  z-index: 2;
+}
+@media (min-width: 692px) {
+  .searchbox2{
+    display: none;
+}
+}
+@media screen and (max-width: 970px) {
+  .navWrapper {
+    width: 95%;
+    position: sticky;
+  }
+  .navSearch2{
+    display: flex;
+  }
+  .nav1 {
+    font-size: 13px;
+  }
+  .nav2 {
+    padding: 0.7rem;
+  }
+  .nav2 > div {
+    width: 95%;
+  }
+  .nav2 > div > div {
+    width: 30%;
+  }
+  .navSearch {
+    width: 80%;
+  }
+  .navSearch2 {
+    width: 80%;
+  }
+  .navSearch > input {
+    width: 80%;
+  }
+  .navSearch2 > input {
+    width: 80%;
+  }
+  .navLogo > a > img {
+    width: 150px;
+  }
+  .btn {
+    display: block;
+    height: 100%;
+    top: 12px;
+  }
+  .navLink {
+    position: fixed;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    top: 0px;
+    left: -100%;
+    line-height: 50px;
+    padding: 50px 10px;
+    transition: all 0.4s;
+  }
+  .navCancel {
+    top: 1rem;
+  }
+  #menuBtn:checked ~ .navLink {
+    left: 0;
+  }
+  #menuBtn:checked ~ .btn.navMenu {
+    display: none;
+  }
+  .navLink::-webkit-scrollbar {
+    width: 0px;
+  }
+  .navLink li {
+    margin: 0px 10px;
+  }
+  .navLink li a {
+    padding: 0 20px;
+    display: block;
+  }
+  .navLink .desktopItem {
+    display: none;
+  }
+  .navLink .mobileItem {
+    display: block;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    padding-left: 20px;
+    color: white;
+  }
+  #showMega:checked ~ .megaBox {
+    max-height: 100%;
+  }
+  .megaBox {
+    position: static;
+    top: 45px;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    padding: 0 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+  .contentBox {
+    width: 100%;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+  }
+  .rowBox {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .linkBox li {
+    margin: 0;
+  }
+}
+.navWrapper input {
+  display: none;
+}
+@media screen and (max-width: 690px) {
+  .navSearch {
+    display: none;
+  }
+  .navSearch2 {
+    display: flex;
+  }
+  .nav2 > div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #debouncingcard{
+    display: none;
+  }
+  #debouncingcard2{
+    display: block;
+  }
+  .nav2 > div > div:nth-child(3) {
+    margin-right: 50px;
+  }
+  .navLogo > a > img {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav1 {
+    padding: 10px;
+    font-size: 10px;
+  }
+  .navLink {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 470px) {
+  .nav1 {
+    display: none;
+  }
+  .navLink {
+    width: 65%;
+    height: 130%;
+  }
+  .navLogin {
+    display: none;
+  }
+  .nav2 {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navIcons {
+    padding-right: 10px;
+  }
+  .navLogo > a > img {
+    width: 80px;
+  }
+  .navLogo1 {
+    display: none;
+  }
+  .navLogo2 {
+    display: block;
+    height: 25px;
+    width: 70px;
+    margin-left: 20px;
+  }
+  .navLogo > a > img {
+    width: 80px;
+  }
+  .navLogout {
+    padding: 0;
+    font-size: 10px;
+    height: 10px;
+  }
+}
